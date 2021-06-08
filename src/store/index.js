@@ -1,0 +1,1 @@
+export { checkUser } from './userCheck/actions';
