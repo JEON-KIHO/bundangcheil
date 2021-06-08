@@ -1,1 +1,0 @@
-export const GET_PHONE = 'GET_PHONE';

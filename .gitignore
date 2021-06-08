@@ -5,10 +5,11 @@
 /.pnp
 .pnp.js
 
+yarn.lock
 /api/node_modules
 /api/public
-/public
-/src
+public/*
+src/*
 
 # testing
 /coverage
