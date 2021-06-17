@@ -1,0 +1,3 @@
+export const CHECK_USER = 'CHECK_USER'
+export const CREATE_TICKET = 'CREATE_TICKET'
+export const ALTER_USERSTATE = 'ALTER_USERSTATE'

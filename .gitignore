@@ -8,8 +8,6 @@
 yarn.lock
 /api/node_modules
 /api/public
-public/*
-src/*
 
 # testing
 /coverage
