@@ -521,3 +521,32 @@ code {
               background-color: #f24c5f;
               border: 0;
               color: white; }
+  #root .setting-wrap {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 94vw;
+    height: 100vh;
+    padding: 0 3vw; }
+    #root .setting-wrap .setting-info-box {
+      display: flex;
+      flex-flow: wrap column; }
+      #root .setting-wrap .setting-info-box .info-box {
+        display: flex;
+        flex-flow: wrap column; }
+    #root .setting-wrap .setting-version-box {
+      display: flex;
+      flex-flow: wrap column; }
+      #root .setting-wrap .setting-version-box .app-version {
+        display: flex;
+        flex-flow: wrap row; }
+        #root .setting-wrap .setting-version-box .app-version .app-version-text {
+          display: flex;
+          flex-flow: wrap column; }
+    #root .setting-wrap .setting-button-box {
+      padding: 2vh 0; }
+      #root .setting-wrap .setting-button-box button {
+        width: 94vw;
+        height: 6vh;
+        border-radius: 3vh; }

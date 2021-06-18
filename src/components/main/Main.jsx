@@ -5,6 +5,7 @@ import { navSwitch } from "../../store";
 import DivTop from "./sections/DivTop";
 import DivBottom from "./sections/DivBottom";
 import Arrive from "../arrive/Arrive";
+import Setting from '../setting/Setting';
 
 const Main = ({ userState, navSwitch }) => {
 
@@ -16,7 +17,8 @@ const Main = ({ userState, navSwitch }) => {
         <>
             {/* <DivTop /> */}
             {/* <DivBottom /> */}
-            <Arrive />
+            {/* <Arrive /> */}
+            <Setting />
         </>
     )
 }

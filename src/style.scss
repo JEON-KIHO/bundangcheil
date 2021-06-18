@@ -725,5 +725,70 @@ code {
     }
   }
 
+  .setting-wrap {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 94vw;
+    height: 100vh;
+    padding: 0 3vw;
+
+    .setting-info-box {
+      display: flex;
+      flex-flow: wrap column;
+
+      p {
+
+      }
+
+      .info-box {
+        display: flex;
+        flex-flow: wrap column;
+
+        input {
+
+        }
+      }
+    }
+
+    .setting-version-box {
+      display: flex;
+        flex-flow: wrap column;
+
+      p {
+
+      }
+
+      .app-version {
+        display: flex;
+        flex-flow: wrap row;
+        
+        .app-version-text {
+          display: flex;
+          flex-flow: wrap column;
+
+          p {
+
+          }
+        }
+
+        button {
+
+        }
+      }
+    }
+
+    .setting-button-box {
+      padding: 2vh 0;
+
+      button {
+        width: 94vw;
+        height: 6vh;
+        border-radius: 3vh;
+      }
+    }
+  }
+
   // root end
 }
