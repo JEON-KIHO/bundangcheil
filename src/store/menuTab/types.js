@@ -1,0 +1,1 @@
+export const MENUTAB_SWITCH = 'MENUTAB_SWITCH'

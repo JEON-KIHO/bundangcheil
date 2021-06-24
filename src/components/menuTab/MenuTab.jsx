@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { menuTabSwitch } from '../../store';
 
-const MenuTab = ({ history }) => {
+const MenuTab = ({ menuTab, menuTabSwitch }) => {
 
-    const onClick = e => {
-        
+    const onClickBack = e => {
+        menuTabSwitch(!menuTab)
     }
 
     return (
@@ -25,10 +27,20 @@ const MenuTab = ({ history }) => {
                     <li><img src='/menuTab/ico-way@3x.png' alt='' />오시는 길</li>
                     <li><img src='/menuTab/ico-setting@3x.png' alt='' />설정</li>
                 </ul>
-                <img src='/checkBox/arrowRight.png' className='arrow-right' onClick={ onClick } alt='' />
+                <img src='/checkBox/arrowRight.png' className='arrow-right' onClick={ onClickBack } alt='' />
             </div>
         </div>
     )
 }
 
-export default MenuTab
+const mapToStateProps = ({ menuTab }) => {
+    return {
+        menuTab: menuTab.menuTab
+    }
+}
+
+const mapToDispatchProps = {
+    menuTabSwitch: (menuTab) => menuTabSwitch(menuTab)
+}
+
+export default connect(mapToStateProps, mapToDispatchProps)(MenuTab)

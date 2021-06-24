@@ -24,3 +24,7 @@ export const navState = {
 export const barcodeState = {
     barcodeLarge: false,
 }
+
+export const menuTabState = {
+    menuTab: false,
+}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { withRouter } from 'react-router-dom';
 import { connect } from "react-redux";
 
-import NavBar from "../../navBar/NavBar";
 import Barcode from "../../barcode/Barcode";
 import { createTicket } from "../../../store";
 
@@ -45,9 +44,7 @@ const DivTop = ({ userName, userPhone, createTicket, history }) => {
     return (
         <>
             <div className='div-top'>
-                <NavBar />
-                <img src='/mainPage/bg-greeting.svg' alt='bgimg' className='bg-img' />
-                <img src='/mainPage/bg-barcode@3x.png' alt='bgbarcodeimg' className='bg-barcode' />
+                <img src='/mainPage/bg-greeting@3x.png' alt='bgimg' className='bg-img' />
                 {userInfo ?
                     renderTrue() :
                     renderFalse()
