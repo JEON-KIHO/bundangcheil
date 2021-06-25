@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import NavBar from '../navBar/NavBar';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
+import { navSwitch } from '../../store';
 
-const Setting = ({ name, phone }) => {
+const Setting = ({ name, phone, navSwitch, history }) => {
+
+    useEffect(() => {
+        navSwitch(true, false, '설정', false)
+    }, [])
+
+    const onClickButton = e => {
+        history.push('/')
+    }
+
     return (
         <>
+            <NavBar />
             <div className='setting-wrap'>
                 <div className='setting-info-box'>
                     <p className='private-info'>개인 기본 정보</p>
@@ -22,7 +35,7 @@ const Setting = ({ name, phone }) => {
                         <button>업데이트</button>
                     </div>
                 </div>
-                <div className='setting-button-box'>
+                <div className='setting-button-box' onClick={ onClickButton }>
                     <button>확인</button>
                 </div>
             </div>
@@ -37,4 +50,8 @@ const mapToStateProps = ({ users }) => {
     }
 }
 
-export default connect(mapToStateProps)(Setting)
+const mapToDispatchProps = {
+    navSwitch: (back, logo, logoText, menu) => navSwitch(back, logo, logoText, menu),
+}
+
+export default connect(mapToStateProps, mapToDispatchProps)(withRouter(Setting))

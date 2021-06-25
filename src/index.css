@@ -344,7 +344,8 @@ code {
           flex-flow: wrap column;
           justify-content: center; }
           #root .menu-tab .menu-box .menu-text-box .menu-text p:nth-child(1) {
-            font-size: 1.25rem; }
+            font-size: 1.25rem;
+            color: #f24c5f; }
           #root .menu-tab .menu-box .menu-text-box .menu-text p:nth-child(2) {
             font-size: 0.875rem; }
         #root .menu-tab .menu-box .menu-text-box .circle {
